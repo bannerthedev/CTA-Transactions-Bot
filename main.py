@@ -17,7 +17,6 @@ logging.basicConfig(level=logging.INFO)
 load_dotenv()
 
 # ---------------- CONFIG (fill these) ----------------
-TOKEN = "MTUwMzg5MjM3Mjg4NTYwMjM0NA.GV7M1u.Jshj8ipak5s1avgwuVDOM5aiLP45XB3DTdEOzo"
 GUILD_ID = 1502484386057027676  # your guild/server ID
 
 # channels

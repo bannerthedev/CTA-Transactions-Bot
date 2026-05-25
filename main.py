@@ -1,4 +1,3 @@
-# main.py (discord.py v2) — clean full file
 from __future__ import annotations
 
 import asyncio
@@ -6,12 +5,16 @@ import json
 import logging
 import random
 from pathlib import Path
+import os
+import dotenv
 
 import discord
 from discord import app_commands
 from discord.ext import commands
+from dotenv import load_dotenv
 
 logging.basicConfig(level=logging.INFO)
+load_dotenv()
 
 # ---------------- CONFIG (fill these) ----------------
 TOKEN = "MTUwMzg5MjM3Mjg4NTYwMjM0NA.GV7M1u.Jshj8ipak5s1avgwuVDOM5aiLP45XB3DTdEOzo"
@@ -2284,7 +2287,7 @@ async def on_ready():
 
 
 async def main():
-    await bot.start(TOKEN)
+    await bot.start(os.getenv("TOKEN"))
 
 
 if __name__ == "__main__":
